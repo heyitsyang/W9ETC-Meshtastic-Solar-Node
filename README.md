@@ -3,6 +3,9 @@
 # W9ETC Meshtastic Solar Node
 This is a "universal" enclosure.  The PCB Cage in the enclosure accommodates the RAK 19007 Starter Kit, Heltec WiFi LoRa32(V3), Heltec T114, or any other similar board sizes less than 60mm x 35mm x 11mm thick
 
+The design features the option for N-Type or SMA connectors, and an optional waterproof USB-C pass-though.
+An inexpensive MPPT controller makes solar charging more efficient.
+
 
 ![final product](construction%20photos/final%20product%20resized%20600c569.jpg)
 
