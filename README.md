@@ -36,6 +36,7 @@ This is a "universal" enclosure.  The PCB Cage in the enclosure accommodates the
 2. If you change the solar cell or MPPT controller, you must be sure they are matched.  A 6V solar cell must use a 6V MPPT controller, a 9V cell with a 9V controller, etc.
 3.  The USB-C pass-through connector is intended for updating firmware if using a Heltec or other radio that does not support OTA firmware updates.  The RAK 19007 and other radios that support BT updating do not require the USB-C pass-through.  In which case the 16mm opening can be used to insert a IPEX to SMA bulkhead connector (see parts list) for adding a external BT (WiFi) SMA antenna.  If you simply wish to seal the hole, a 3D-Printed hole plug is provided.
 4. 3D printing:
+   - Latest 3D printing files are maintained at https://www.printables.com/model/1012624-w9etc-meshtastic-solar-node
    - You only need one of the pole mounts.  One is a simple mount which attaches the solar panel parallel to a pole.  The other is hinged mount that allows the solar panel to be positioned at an angle to the pole.
    - Print the electronics enclosure component using PETG, 20% infill, & 5 perimeters for better water resistance
    - Supports are required for the simple pole mount
