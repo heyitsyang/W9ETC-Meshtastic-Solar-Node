@@ -7,7 +7,7 @@ The design features the option for N-Type or SMA connectors, and an optional wat
 An inexpensive MPPT controller makes solar charging more efficient.
 
 
-![final product](construction%20photos/final%20product%20resized%20600c569.jpg)
+![final product](construction%20photos/final%20product%20resized%20600x569.jpg)
 
 ## Parts List
   
@@ -75,11 +75,11 @@ The electronics wiring diagram for a RAK19007 Starter Kit is shown below.  Note 
 Perform a trial placement of circuit boards to determine a wiring plan and wire lengths.  Photo shown below has a Heltec Lora32(V3), CN3791 Solar MPPT controller, BME280 Environmental Sensor, USB C waterproof Female to Female panel pass-thru, IPEX female to N bulkhead mount female connector, latching push button power switch, and 3D printed dual 18650 battery holder.
 ![trial placement](construction%20photos/board%20placement.jpg)
 
-Heltec Lora32(V3) assembly wired prior to final placement of components
-![pre-stuffing wiring](construction%20photos/pre-stuffing%20wiring.jpg)
+Heltec Lora32(V3) assembly wired prior to final placement of components & final placement prior to closure
+![Heltec wiring](construction%20photos/wiring+stuffed%20HeltecV3.jpg)
 
-Final component placement prior to closure
-![stuffed](construction%20photos/stuffed%202.jpg)
+RAK19007 assembly wired prior to final placement of components & final placement prior to closure
+![RAK wiring](construction%20photos/wiring+stuffed%20RAK19007.jpg)
 
 Using the M5 x 10mm socket cap screws, attach the solar panel assembly to the electronics enclosure.  Do not exceed the specified 10mm length of these screws. Be sure there are no wires pinched between.  A waterproof seal is achieved when the electronics enclosure is pressed into the silicone foam strip, so be sure the M5 screws are firmly and evenly seated.
 
