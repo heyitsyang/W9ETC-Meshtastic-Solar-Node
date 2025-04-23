@@ -13,7 +13,7 @@ An inexpensive MPPT controller makes solar charging more efficient.
   
 | Qty | Description                                                                                                                             | Links                                                                                                                                                                            |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | 6V 3W Solar Panel 165mm x 165mm                                                                                                       | https://www.amazon.com/Monoline-Portable-Positive-Photovoltaic-165x165MM/dp/B0D3QGXL7R  <br><br>https://www.aliexpress.us/item/2251832715035737.html                        |
+| 1   | 6V 3W Solar Panel 165mm x 165mm  (see notes)                                                                                                     | https://www.amazon.com/Monoline-Portable-Positive-Photovoltaic-165x165MM/dp/B0D3QGXL7R  <br><br>https://www.aliexpress.us/item/2251832715035737.html                        |
 | 1   | CN3791 6V MPPT Solar Charger circuit board                                                                                              | https://www.amazon.com/Taidacent-Chargers-Battery-Controller-Charging/dp/B089ZVSQ4K<br><br>https://www.aliexpress.us/item/3256806488461808.html                                                                                 |
 | 2   | 18650 Li-ion battery high quality                                                                                                       | https://store.rokland.com/products/sanyo-ncr18650ga-3450mah-10a-battery-lilygo-ttgo-meshtastic-t-beam<br><br>https://www.18650batterystore.com/products/panasonic-ncr18650ga-ga6 |
 | 1   | Dual 18650 battery holder (wire in parallel)                                                                                            | https://www.amazon.com/gp/product/B09V1LWPCD <br><br>or print your own (see provided [3D printer files](https://www.printables.com/model/1012624-w9etc-meshtastic-solar-node)) using<br> <br>https://www.aliexpress.us/item/2251832632615852.html               |
@@ -35,21 +35,22 @@ An inexpensive MPPT controller makes solar charging more efficient.
   
 ## Notes:
 
-1. If you use a LiPo battery pack instead of the 18650s, *be sure the wiring polarity is correct on the LiPo pack before inserting* into the MPPT controller.  Unfortunately, there is no standard for LiPo battery pin polarity and different manufacturers use different wiring polarity for the same connector.  Reversed polarity usually has undesirable results.
-2. If you change the solar cell or MPPT controller, be aware that some MPPT controllers are designed for a specific input voltage, so be sure they are matched.  A 6V solar cell must use a 6V MPPT controller, a 9V cell with a 9V controller, etc.
-3.  The USB-C pass-through connector is intended for updating firmware if using a Heltec or other radio that does not support OTA firmware updates.  The RAK 19007 and other radios that support BT updating do not require the USB-C pass-through.  In which case the 16mm opening can be used to insert a IPEX to SMA bulkhead connector (see parts list) for adding a external BT (WiFi) SMA antenna.  If you simply wish to seal the hole, a 3D-Printed hole plug is provided.
-4. 3D printing:
+1. If you use a LiPo battery pack instead of the 18650s, *be sure the wiring polarity is correct on the LiPo pack before inserting* into the MPPT controller.  Unfortunately, there is no standard for LiPo battery pin polarity and different manufacturers use different wiring polarity for the same connector.  Reversed polarity usually damages the electronics.
+2. The BOM specifies a 6v solar panel simply because they are currently readily available.  If the specified panel becomes difficult to source, either a 6, 9, or 12v panel can be used so long as the panel outputs sufficient wattage to charge the battery.  Through experimentation, this seems to be a minimum of 2.5w if not installed in an excessively cloudy area.  
+3. If you change the solar panel be sure you obtain a matching MPPT controller.  A 6V solar panel should use a 6V MPPT controller, a 9V cell with a 9V controller, etc.
+4.  The USB-C pass-through connector is intended for updating firmware if using a Heltec or other radio that does not support OTA firmware updates.  The RAK 19007 and other radios that support BT updating do not require the USB-C pass-through.  In which case the 16mm opening can be used to insert a IPEX to SMA bulkhead connector (see parts list) for adding a external BT (WiFi) SMA antenna.  If you simply wish to seal the hole, a 3D-Printed hole plug is provided.
+5. 3D printing:
    - All 3D printing files for this project are maintained at https://www.printables.com/model/1012624-w9etc-meshtastic-solar-node
-   - Models for 165mm, 147mm, and 145mm square solar cell frames are provided
+   - Files for 165mm, 147mm, and 145mm square solar cell frames are provided
    - You only need one of the pole mounts.  One is a simple mount which attaches the solar panel parallel to a pole.  The other is hinged mount that allows the solar panel to be positioned at an angle to the pole.
    - Print the electronics enclosure component using PETG, 20% infill, & 5 perimeters for better water resistance
    - Supports are required for the simple pole mount
    - Print the hinged mount L-channel facing down.  Supports are needed for the notches in the L-channel and the slot for the hose clamp/zip tie.
    - Supports are recommended for the holes in the enclosure
    - Be sure to flip the solar cell frame back so the solar panel side is facing up for printing.  It does not need supports.
-5. Assemble in an air conditioned or low humidity space to prevent condensate from forming inside the electronics enclosure once sealed.
-6. The set of four standoffs next to the electronics enclosure PCB cage fit the RAK19004 Green Power Module in case you want to use it.  The MPPT module listed in the part above is a far better choice.  The standoffs also fit a 3.3v BME280 Temp/Hum sensor.
-7. All epoxy coated solar panels (most of them) will yellow severely in the sun.  Spraying them with automotive clear coat will prevent this.  Small cans of clear coat are available at your auto parts store.
+6. Assemble in an air conditioned or low humidity space to prevent condensate from forming inside the electronics enclosure once sealed.
+7. The set of four standoffs next to the electronics enclosure PCB cage fit the RAK19004 Green Power Module in case you want to use it.  The MPPT module listed in the part above is a far better choice.  The standoffs also fit a 3.3v BME280 Temp/Hum sensor.
+8. All epoxy coated solar panels (most of them) will yellow severely in the sun.  Spraying them with automotive clear coat will prevent this.  Small cans of clear coat are available at your auto parts store.
 
 ## Construction
 Install all the heat-set threaded inserts. There are many internet videos showing how to use heat-set inserts. Ensure a screw is perfectly straight and when threaded into the insert.  A heat-set insert can be re-heated to correct an incorrect installation.  
