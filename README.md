@@ -92,5 +92,4 @@ The pole mounts are attached to the electronics enclosure using M3 x 10mm screws
 
 When using the hose clamps to attach the assembly to a pole, do not over tighten or the L-channel mount will crack.  If this becomes a problem, insert an aluminum L-Channel section between the mount and the pole before tightening.
 
-Happy Meshing!
 
